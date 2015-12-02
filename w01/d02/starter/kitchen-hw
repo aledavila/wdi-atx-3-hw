@@ -1,0 +1,77 @@
+Last login: Mon Nov 30 20:11:50 on ttys001
+ GA General Assembly  Web Development Immersive
+------------------------------------------
+git version 2.6.2
+Homebrew 0.9.5 (git revision 388f7; last commit 2015-11-30)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
+node v5.1.0
+psql (PostgreSQL) 9.4.5
+------------------------------------------
+type unwelcome to remove this message
+A ~
+$ cd wdi/homework/kitchen
+-bash: cd: wdi/homework/kitchen: No such file or directory
+A ~
+$ cd wdi/hw/kitchen
+A ~/wdi/hw/kitchen
+$ rm cans.txt && cd fridge && mv trashcan/ .. && cd .. && cd trashcan && mv sink .. && cd ..
+cans.txt
+trashcan/ -> ../trashcan/
+sink -> ../sink
+A ~/wdi/hw/kitchen
+$ cd fridge && rm -r diapers.txt && cd freezer && rm -r couch.txt && cd .. & cd ..
+[1] 11824
+diapers.txt
+couch.txt
+A ~/wdi/hw
+$ cd kitchen
+[1]+  Done                    cd fridge && rm -v -r diapers.txt && cd freezer && rm -v -r couch.txt && cd ..
+A ~/wdi/hw/kitchen
+$ mv /pantry/crisper-drawer /fridge && cd crisper-drawer && touch apples.txt & cd .. & rm -r delete-me.txt && mkdir drying-rack && cd drying-rack && touch clean-dishes.txt && cd ..
+[1] 11858
+[2] 11859
+mv: rename /pantry/crisper-drawer to /fridge: No such file or directory
+rm: delete-me.txt: No such file or directory
+[2]+  Done                    cd ..
+[1]+  Exit 1                  mv -v /pantry/crisper-drawer /fridge && cd crisper-drawer && touch apples.txt
+A ~/wdi/hw/kitchen
+$ cd sink && rm -r delete-me.txt && mkdir drying-rack && mv clean-dishes.txt drying-rack/ && cd ..
+delete-me.txt
+clean-dishes.txt -> drying-rack/clean-dishes.txt
+A ~/wdi/hw/kitchen
+$ cd pantry && cd cripser-drawer && touch apples.txt && cd ..
+-bash: cd: cripser-drawer: No such file or directory
+A ~/wdi/hw/kitchen/pantry
+$ cd pantry && cd crisper-drawer && touch apples.txt && cd ..
+-bash: cd: pantry: No such file or directory
+A ~/wdi/hw/kitchen/pantry
+$ cd crisper-drawer && touch apples.txt && cd ..
+A ~/wdi/hw/kitchen/pantry
+$ mv crisper-drawer ../fridge/
+crisper-drawer -> ../fridge/crisper-drawer
+A ~/wdi/hw/kitchen/pantry
+$ cd .. && tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpease.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── eggshells.txt
+
+7 directories, 12 files
+A ~/wdi/hw/kitchen
+$
