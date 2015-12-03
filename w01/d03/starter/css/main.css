@@ -1,15 +1,3 @@
-/*
-
-## Style Hints:
-
-Body Font Size = 12px
-	 Line Height = 17px
-	 Font Family = "Times New Roman", serif
-	 Font Color = #656565
-
-Link Hover Color = #20222a
-
-*/
 * {
   box-sizing: border-box;
 }
@@ -26,11 +14,17 @@ a {
 }
 
 .wrapper {
-  margin: 0 15%;
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .logo img {
   position: inline-block;
   width: 24.6%;
   border: 5px solid lightGray;
+}
+
+a:hover {
+  color: #20222a;
 }
