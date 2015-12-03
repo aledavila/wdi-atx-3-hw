@@ -21,6 +21,10 @@ body {
   color: #656565;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   margin: 0 15%;
 }
