@@ -20,6 +20,8 @@ a {
     color: #00d6dd;
   }
 
+
+
 nav {
   background-color: #00d6dd;
   padding: 2% 7% 2% 7%;
@@ -47,33 +49,129 @@ nav {
     text-decoration: underline;
   }
 
+  form input{
+    display: block;
+    width: 80%;
+    margin-bottom: .5em;
+  }
+  #query {
+    border-radius: 10px;
+  }
+
+
+
 .jumbotron {
   background: url("images/background.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   text-align: center;
   padding: 7% 0 7% 0;
 }
   .jumbotron p {
-    box-sizing: content-box;
-    display: block;
+    width: 12%;
+    margin: auto;
+    border-radius: 3px;
     background: black;
-    padding: 5px;
+    font-weight: 900;
+    padding: 12px;
+    font-size: .7em;
+    letter-spacing: .25em;
+    font-family: "Open Sans", sans-serif;
     color: yellow;
   }
   .jumbotron h1{
     color: yellow;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    font: 4em "Arial Rounded MT Bold", "Nunito", sans-serif;
   }
+
+
 
 .wrapper {
   margin: 0 5% 0 5%;
 }
 
+
+
+.content img {
+    float: left;
+    width: 5%;
+    text-align: center;
+    margin: -0.36em 1em 0 0;
+}
+.content h2{
+  float: right;
+  width: 85%;
+  font-size: 2.85em;
+  letter-spacing: -0.05em;
+  margin-bottom: 1em;
+  font: 500 3em "Arial Rounded MT Bold", "Nunito", sans-serif;
+}
+
+
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 1em;
+}
+  .well {
+    background-color: #00d6dd;
+    border-radius: 0px;
+    border: none;
+    width: 100%;
+    height: 220px;
+    position: relative;
+  }
+  .well img {
+    background-color:  #00d6dd;
+    position: absolute;
+    overflow: auto;
+    bottom: -0.90em;
+    left: 45%;
+    border-radius: 100%;
+    background: #00d6dd;
+    padding: .5em;
+    width: 45px;
+  }
+  .box h4 {
+    font: 900 .7em "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    color: white;
+    padding: 1.5em 1.25em .75em;
+  }
+  .box p {
+    font: 300 1em/1.65 "Open Sans", sans-serif;
+    color: white;
+  }
+  p.small {
+    font-size: 0.80em;
+    text-decoration: underline;
+    color: white;
+  }
+  p.single{
+    text-decoration: italic;
+  }
+  .single p{
+    font-style: italic;
+  }
+  .single a {
+    color: yellow;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+
 .pub {
   text-align: center;
 }
   .pub img {
-    width: 80%;
+    width: 70%;
+    margin-bottom: 1em;
   }
 
 footer {
@@ -83,4 +181,60 @@ footer {
     list-style-type: none;
     display: inline;
   }
+
+@media screen and (max-width: 600px) {
+  nav img {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  nav ul {
+    margin-bottom: 5%;
+  }
+  nav li {
+    list-style-type: none;
+    display: inline;
+    background: white;
+    font-weight: 900;
+    padding: 8px;
+    font-size: -.9em;
+    letter-spacing: .20em;
+    border-radius: 5px;
+  }
+  nav a {
+    text-decoration: none;
+    color: #00d6dd;
+  }
+  nav a:hover {
+    color: yellow;
+    text-decorati
+  }
+  nav p a {
+    text-decoration: underline;
+    color: white;
+  }
+
+  form input{
+    display: none;
+  }
+  .well {
+    height: auto !important;
+    padding-bottom: 1em;
+    margin: 1em 0;
+  }
+  .box h4 {
+    font-size: 12px;
+  }
+  .well img {
+    display: none;
+  }
+  .nl input {
+    margin-bottom: .5em;
+    width: 100%;
+  }
+  .nl button {
+    width: 93%;
+  }
+}
+
 
