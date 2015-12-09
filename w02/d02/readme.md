@@ -1,4 +1,4 @@
-# Choose Your Own Adventure!
+# Choose Your Own Adventure!!!
 
 1. Rules
 2. Sample Ideas
