@@ -5,6 +5,7 @@
 alert("The hunger games are starting! May the odds be ever in your favor");
 
 var start = prompt("The hunger games have started do you: team up with katniss, be against katniss, or go at it alone?");
+
 if (start === "team up with katniss") {
   var team = prompt("Do you have a skill?");
   if (team === "no") {
@@ -29,7 +30,9 @@ if (start === "team up with katniss") {
           }
       }
   }
-} else if (start === "alone") {
+}
+
+else if (start === "alone") {
   var run = prompt("Do you go for the items first or go into the woods?");
     if (run === "items") {
       var nice = prompt("Are you a skilled fighter?");
@@ -41,6 +44,8 @@ if (start === "team up with katniss") {
     } else {
       alert("You're alone with no weapons and no team and you've decided to go into the woods alone. You're eventually gonna die so good job!");
     }
-} else if (start === "against katniss") {
+}
+
+else if (start === "against katniss") {
     alert("You were betrayed by your people and they killed you. That's what you get for teaming up with bad people! You deserved it!");
 }
