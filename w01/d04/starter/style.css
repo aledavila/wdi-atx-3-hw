@@ -113,8 +113,6 @@ nav {
 
 
 .box {
-  display: flex;
-  justify-content: space-around;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -207,7 +205,6 @@ footer {
   }
   nav a:hover {
     color: yellow;
-    text-decorati
   }
   nav p a {
     text-decoration: underline;
