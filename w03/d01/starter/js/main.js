@@ -6,6 +6,7 @@ $(function() {
     var num;
     var r = 0;
     var result;
+    var history;
 
     $("#clear").click(function() {
         box.val('');
@@ -76,12 +77,17 @@ $(function() {
 
     r++;
     result = box.val();
-    log.prepend( r + ") " + result + "\n");
-    localStorage.setItem("R" + r + ": ", result);
+    log.prepend(r + ") " + result + "\n");
+    history = log.val();
+    localStorage.setItem('history', history);
+
+    if (localStorage.getItem('history')) {
+        $('#history').html(localStorage.getItem('history'));
+    }
 
     $("#clear-log").click(function() {
-      window.localStorage.clear();
-      log.val('');
+        window.localStorage.clear();
+        log.val('');
     });
 
     });
