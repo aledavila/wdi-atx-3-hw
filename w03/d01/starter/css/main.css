@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  background-color: lightGray;
+}
+
+.wrapper {
+  margin: 0 5%;
+}
+
+.calc {
+  margin-top: .3em;
+}
+
+.calculator {
+  padding: 2% 2%;
+}
+
+.page-header {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 5em;
+}
+
+textarea {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+}
+
+label {
+  display: block;
+}
+
+#clear-log {
+  text-align: center;
+}
