@@ -5,3 +5,17 @@ story = [
   'The spaceship hits a wormhole and crashes in 1941 Roswell, NM',
   'Fry encounters his grandmother, then inadvertently sires his father'
 ]
+
+
+story.each do |sentence|
+  puts sentence
+  puts "Do we continue? (y or n)"
+  user_answer = gets.chomp
+
+  if user_answer == "y"
+    story.push(sentence)
+  elsif user_answer == "n"
+    puts "Goodbye then!"
+    break
+  end
+end
