@@ -1,0 +1,9 @@
+<h1>Characters#index</h1>
+<p>Find me in app/views/characters/index.html.erb</p>
+
+<!-- First check to do if there are any chacceters before loading! -->
+<ul>
+<% @characters.each do |character| %>
+    <li><a href="/characters/<%= character.id %>/show"><%= character.name %></li>
+<% end %>
+</ul>
