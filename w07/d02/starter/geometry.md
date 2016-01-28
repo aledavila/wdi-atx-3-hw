@@ -1,5 +1,9 @@
 # Geometry
 
+### TIPS
+- You can reference the SECOND (not the first) code example [here](http://idhana.com/2009/07/13/constructor-vs-class-methods-in-javascript/) if you need a reminder on how to augment an object's prototype. Remember, adding a method to an object's prototype means adding a method to all instances of that object.
+- You may need to look up some geometric terms like area, isosceles, obtuse, etc. if you've forgotten what they mean :)
+
 ## Rectangle
 
 Given the following constructor function:
