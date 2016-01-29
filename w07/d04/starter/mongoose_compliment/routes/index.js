@@ -7,6 +7,11 @@ function randomColor() {
 	return colors[Math.floor(Math.random()*colors.length)];
 }
 
+// function randomCompliment(complimentArray) {
+//   var documents = complimentArray;
+//   return documents[Math.floor(Math.random()*documents.length)];
+// }
+
 /* GET compliment form. */
 router.get('/compliment_form', function(req, res, next) {
 	var color = randomColor();
@@ -20,16 +25,29 @@ router.get('/(:name)?', function(req, res, next) {
 
 	// USE MONGOOSE TO GET A RANDOM COMPLIMENT FROM THE DATABASE, THEN RENDER THE VIEW IN THE DATABASE CALLBACK
 
-	var compliment = null; // this line is just here to temporarily prevent an undefined error. You can remove it once you get a real compliment from the DB.
-	res.render('index', { title: 'WDI Emergency Compliment', color: color, name: name, compliment: compliment });
+	// var compliment = null; // this line is just here to temporarily prevent an undefined error. You can remove it once you get a real compliment from the DB.
+	Compliment.find({}, 'compliment', function(err, data) {
+    if (err) console.log(err);
+    console.log(data);
+    var random = Compliment.randomCompliment(data);
+    res.render('index', { title: 'WDI Emergency Compliment', color: color, name: name, compliment: random.compliment });
+  });
 });
 
 /* POST compliment. */
 router.post('/', function(req, res, next) {
 	var newCompliment = req.body.compliment;
 
+  var newCompliment = Compliment({
+    compliment: newCompliment
+  });
+
+  newCompliment.save(function(err) {
+    if (err) console.log(err);
+
+    res.redirect('/')
+  });
 	// USE MONGOOSE TO SAVE A NEW COMPLIMENT TO THE DATABASE, THEN REDIRECT TO THE ROOT URL
-	res.redirect('/');
 });
 
 module.exports = router;
