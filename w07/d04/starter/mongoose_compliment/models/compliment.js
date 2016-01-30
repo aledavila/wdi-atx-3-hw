@@ -1,7 +1,6 @@
 var mongoose = require('mongoose');
 
 // var Schema = mongoose.Schema;
-
 var complimentSchema = new mongoose.Schema({
   compliment: { type: String, required: true }
 });
